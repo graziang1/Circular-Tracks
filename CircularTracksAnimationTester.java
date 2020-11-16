@@ -2,7 +2,6 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.Color;
-
 public class CircularTracksAnimationTester {
     public static void main(String[] args) {
         JFrame frame = new JFrame();
