@@ -27,14 +27,18 @@ public class CircularTracksShape implements Moveable {
 
 	//implementation of Moveable
 	public void translate(int dx, int dy) {
- 		//position clockwise trains
+		//position clockwise trains
+		Double j = 1.0;
   		for (int i=0; i<n; i=i+2){
-			theta[i] = theta[i] + i * (Math.PI/300);
+			theta[i] = theta[i] + j * (Math.PI/300);
+			j++;
 		}
 
 		// position counter-clockwise trains
+		Double k = 2.0;
   		for (int i=1; i<n; i= i+2){
-			theta[i] = theta[i] - i * (Math.PI/300);
+			theta[i] = theta[i] - k * (Math.PI/300);
+			k++;
 		}	
 	}
 
